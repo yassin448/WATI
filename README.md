@@ -92,7 +92,7 @@ Use the up arrow key to navigate through your input history.
 
 ## License
 
-This project is licensed under the GNU GPL License.
+This project is licensed under the Apache-2.0 License.
 
 ## Acknowledgements
 
