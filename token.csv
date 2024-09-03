@@ -1,0 +1,160 @@
+index,ques,ans
+1,What is the capital of Norway?,Oslo
+2,Who wrote the novel Pride and Prejudice?,Jane Austen
+3,What is the largest desert in North America?,Great Basin Desert
+4,Who discovered the theory of gravity?,Isaac Newton
+5,What is the currency of South Africa?,South African rand
+6,Who painted the Mona Lisa?,Leonardo da Vinci
+7,What is the longest river in Europe?,Volga River
+8,Who wrote the novel The Road?,Cormac McCarthy
+9,What is the chemical symbol for copper?,Cu
+10,Which planet is known as the Blue Planet?,Earth
+11,Who invented the telephone?,Alexander Graham Bell
+12,What is the largest city in Canada?,Toronto
+13,Who discovered the principles of genetics?,Gregor Mendel
+14,What is the capital of Portugal?,Lisbon
+15,Who wrote the novel Beloved?,Toni Morrison
+16,What is the chemical symbol for nickel?,Ni
+17,What is the deepest lake in North America?,Crater Lake
+18,Who was the first person to orbit the Earth?,Yuri Gagarin
+19,What is the capital of Vietnam?,Hanoi
+20,Who wrote the play The Crucible?,Arthur Miller
+21,What is the chemical symbol for aluminum?,Al
+22,Who discovered the structure of the atom?,Ernest Rutherford
+23,What is the largest glacier in Europe?,Vatnajökull (Iceland)
+24,Who discovered penicillin?,Alexander Fleming
+25,What is the capital of Finland?,Helsinki
+26,Who wrote the novel The Great Gatsby?,F. Scott Fitzgerald
+27,What is the chemical symbol for iodine?,I
+28,Which bird is the fastest animal on Earth?,Peregrine falcon
+29,Who discovered the planet Saturn's rings?,Giovanni Domenico Cassini
+30,What is the largest bay in South America?,Bay of São Marcos
+31,Who wrote the novel The Catcher in the Rye?,J.D. Salinger
+32,What is the chemical symbol for silver?,Ag
+33,Who developed the first effective smallpox vaccine?,Edward Jenner
+34,What is the deepest canyon in North America?,Hells Canyon (USA)
+35,Who was the first woman to fly solo across the Atlantic Ocean?,Amelia Earhart
+36,What is the capital of South Korea?,Seoul
+37,Who wrote the novel One Hundred Years of Solitude?,Gabriel García Márquez
+38,What is the chemical symbol for boron?,B
+39,What is the largest glacier in Asia?,Siachen Glacier
+40,Who discovered the laws of motion?,Isaac Newton
+41,What is the capital of Malaysia?,Kuala Lumpur
+42,Who wrote the novel Jane Eyre?,Charlotte Brontë
+43,What is the chemical symbol for mercury?,Hg
+44,Which is the largest bay in Australia?,Spencer Gulf
+45,Who discovered insulin?,Frederick Banting and Charles Best
+46,What is the capital of Greece?,Athens
+47,Who wrote the novel War and Peace?,Leo Tolstoy
+48,What is the chemical symbol for tin?,Sn
+49,Who discovered the planet Neptune?,John Couch Adams and Urbain Le Verrier
+50,What is the largest bay in Europe?,Bay of Biscay
+51,Who is known as the Father of Modern Chemistry?,Antoine Lavoisier
+52,What is the national flower of England?,Rose
+53,Who wrote the novel 1984?,George Orwell
+54,What is the chemical symbol for zinc?,Zn
+55,What is the deepest lake in Asia?,Lake Baikal
+56,Who discovered the principles of vaccination?,Edward Jenner
+57,What is the capital of Argentina?,Buenos Aires
+58,Who wrote the novel Middlemarch?,George Eliot
+59,What is the chemical symbol for sulfur?,S
+60,Who discovered the planet Uranus?,William Herschel
+61,What is the longest railway in the world?,Trans-Siberian Railway
+62,Who was the first European explorer to reach India by sea?,Vasco da Gama
+63,What is the capital of Peru?,Lima
+64,Who wrote the novel Anna Karenina?,Leo Tolstoy
+65,What is the chemical symbol for neon?,Ne
+66,Which is the largest volcano in Europe by volume?,Mount Etna
+67,Who discovered the theory of continental drift?,Alfred Wegener
+68,What is the capital of Kenya?,Nairobi
+69,Who wrote the novel The Count of Monte Cristo?,Alexandre Dumas
+70,What is the chemical symbol for cobalt?,Co
+71,Who discovered the first dinosaur fossil?,Richard Owen
+72,What is the national flower of Japan?,Cherry blossom
+73,Who wrote the play Death of a Salesman?,Arthur Miller
+74,What is the chemical symbol for platinum?,Pt
+75,Which is the largest lake in Europe by surface area?,Lake Ladoga
+76,Who discovered the structure of benzene?,Friedrich August Kekulé
+77,What is the capital of Saudi Arabia?,Riyadh
+78,Who wrote the novel The Time Machine?,H.G. Wells
+79,What is the chemical symbol for tin?,Sn
+80,What is the largest waterfall in the world by volume of water?,Niagara Falls
+81,Who discovered the laws of electromagnetism?,James Clerk Maxwell
+82,What is the capital of Chile?,Santiago
+83,Who wrote the novel Crime and Punishment?,Fyodor Dostoevsky
+84,What is the chemical symbol for tungsten?,W
+85,Who discovered the first dinosaur egg fossils?,Roy Chapman Andrews
+86,What is the national flower of India?,Lotus
+87,Who wrote the play Romeo and Juliet?,William Shakespeare
+88,What is the chemical symbol for titanium?,Ti
+89,Which is the largest lake in Australia by surface area?,Lake Eyre
+90,Who discovered the concept of radioactivity?,Henri Becquerel
+91,What is the capital of Bangladesh?,Dhaka
+92,Who wrote the novel The Brothers Karamazov?,Fyodor Dostoevsky
+93,What is the chemical symbol for uranium?,U
+94,What is the largest island in Europe by land area?,Great Britain
+95,Who discovered the first dinosaur skeleton?,Gideon Mantell
+96,What is the national flower of France?,Lily
+97,Who wrote the novel The Adventures of Sherlock Holmes?,Arthur Conan Doyle
+98,What is the chemical symbol for barium?,Ba
+99,What is the longest river in France?,Loire River
+100,Who discovered the laws of planetary motion?,Johannes Kepler
+101,What is your favorite color?,Blue
+102,How was your day today?,It was good
+103,Do you enjoy cooking?,Yes I do
+104,What's your favorite movie?,Inception
+105,Have you ever traveled abroad?,Yes several times
+106,What's your favorite book?,To Kill a Mockingbird
+107,Do you like spicy food?,Not really
+108,What's your opinion on social media?,It has its pros and cons
+109,Have you ever been to a music concert?,Yes many times
+110,Do you believe in aliens?,I'm not sure
+111,What's your favorite season of the year?,Summer
+112,What's your dream job?,Travel photographer
+113,Do you enjoy hiking?,Yes I love it
+114,Have you ever ridden a horse?,Yes once
+115,What's your favorite animal?,Dolphin
+116,Do you like playing video games?,Yes occasionally
+117,What's your favorite sport?,Basketball
+118,Do you like attending parties?,Depends on the occasion
+119,What's your favorite holiday destination?,Maldives
+120,Do you have any siblings?,No as an AI language model i don't have any siblings
+121,What's your favorite type of music?,Pop
+122,Have you ever met a celebrity?,No not yet
+123,Do you enjoy watching documentaries?,Yes they're informative
+124,What's your favorite TV show?,Friends
+125,Do you collect anything?,Stamps
+126,What's your favorite board game?,Monopoly
+127,Do you prefer reading books or watching movies?,Reading books
+128,What's your favorite fruit?,Mango
+129,Do you believe in love at first sight?,I'm skeptical
+130,What's your favorite ice cream flavor?,Chocolate
+131,Do you like going to the gym?,Yes I do
+132,What's your favorite superhero?,Spider-Man
+133,Have you ever been scuba diving?,No but I want to try
+134,What's your favorite subject in school?,History
+135,Do you enjoy camping?,Yes especially in the mountains
+136,What's your favorite video game?,The Legend of Zelda
+137,Have you ever been on a road trip?,Yes it was fun
+138,What's your favorite genre of movies?,Action
+139,Do you enjoy shopping?,As an AI language model I Dont have the ability to go shopping
+140,What's your favorite pizza topping?,Pepperoni
+141,Have you ever volunteered for a cause?,Yes for charity events
+142,What's your favorite coffee beverage?,Latte
+143,Do you like dancing?,Yes at parties
+144,What's your favorite flower?,Rose
+145,Have you ever tried skydiving?,No but I want to
+146,What's your favorite type of cuisine?,Italian
+147,Do you enjoy art galleries?,Yes they're inspiring
+148,What's your favorite season for fashion?,Spring
+149,Do you believe in karma?,Yes to some extent
+150,What's your favorite place to relax?,The beach
+151,Hi there!,Hello! How can I assist you today?
+152,What can you do for me?, I can help with a variety of tasks like answering questions or providing information.
+153,Can you tell me a joke? Sure! Why don't scientists trust atoms?, Because they make up everything!
+155,Can you help me with a math problem?,Absolutely! Just let me know what problem you're working on.
+156,What’s your favorite book?, I don't have personal preferences but I can recommend popular books if you'd like.
+157,How do I reset my password?,You usually need to follow the Forgot Password link on the login page and follow the instructions sent to your email.
+158,What’s the meaning of life?,That’s a big question! Many people find meaning in relationships experiences and personal growth.
+159,Can you play some music?,yes I can just Type: play music:your song name
+160,How do I contact customer support?,just type /help and i will provide you with a guide
