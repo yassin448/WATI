@@ -90,6 +90,16 @@ If the assistant provides an incorrect answer, you can correct it by providing f
 
 Use the up arrow key to navigate through your input history.
 
+### arguments 
+1. --use-core (uses the finetuned version of wati)
+2. --use-groq (uses fallbackai)
+
+
+### Notes
+1.this version is still in beta and you may experience incorrect or totally broken answer so please try to use the arguments correctly and follow the guide in this readme for it to work properly 
+2.to use groq or (the fallbackai) you need to obtain and api key by signing up on this website:https://console.groq.com/playground and after signing in you need to go to the api key tab and generate a new one and open the Aidata file and put it in get api key
+3.you will find the 🥇 finetuned Wati version on the release tab which you need to install and add to the same directory of the ai for the --use-core to work
+
 ## License
 
 This project is licensed under the Apache-2.0 License.
