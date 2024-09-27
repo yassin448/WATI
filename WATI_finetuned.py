@@ -7,7 +7,7 @@ def loadmodel():
  global tokenizer
  global device
  # Define the checkpoint directory
- checkpoint_dir = "./WATI_core_dependencies"
+ checkpoint_dir = "/home/yassin/Documents/Aiwithypython/WATI_core_dependencies"
 
  # Load the tokenizer and model from the checkpoint
  tokenizer = T5Tokenizer.from_pretrained(checkpoint_dir)

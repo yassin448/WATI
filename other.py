@@ -48,7 +48,6 @@ validation_data = dataset["validation"]
 
 st = None
 message = None
-server_event = threading.Event()
 
 
 # Global variable to hold instance of YouTubePlayer
@@ -57,17 +56,8 @@ youtubeplayer = None
 #global history
 history = None
 
-# Global variables
-profile_pic_frame = None
-main_frame = None
-root = None
-
 #global question
 question = None
-
-canwrite=None
-
-minichat_area=None
 
 #is answering
 isanswering =False
@@ -84,7 +74,7 @@ WEATHER_API_KEY = 'c27ea1d81b6a244f89ce37c2c535330c'
 
 # Model information
 MODEL_NAME = "WATI"
-MODEL_VERSION = "2.6"
+MODEL_VERSION = "2.5"
 
 
 ##########################################################################################################################
@@ -438,34 +428,16 @@ def write_to_chat_area(response):
         time.sleep(random.uniform(0.02, 0.08))
     chat_area.insert(tk.END, "\n")
     
-def write_to_minichat(answer):
-    #print(answer)
-    global canwrite
-    canwrite=False
-    for char in answer:
-         minichat_area.insert(tk.END, char)
-         minichat_area.update_idletasks()
-         time.sleep(random.uniform(0.02, 0.08))
-         
-    minichat_area.insert(tk.END, "\n")
-    canwrite=True
-        
 # create a new thread
 def simulate_typing(answer):
     #write response to server if active
-    global server_event , canwrite, minichat_area
+    global server_event
     if server_event.is_set() : 
         server_send_messages(answer)
-    elif canwrite:
-        
-        t = threading.Thread(target=write_to_minichat , args=(answer,))
-        t.start()
-       
-        
     else :
-        
-     t = threading.Thread(target=write_to_chat_area , args=(answer,))
-     t.start()
+        pass
+    t = threading.Thread(target=write_to_chat_area , args=(answer,))
+    t.start()
     
     
     
@@ -722,13 +694,14 @@ def on_up_arrow(event):
 
 
 
+
 ##########################################################################################################################
 #################################################MAIN FUNCTION############################################################
 ##########################################################################################################################
 
 
 def main():
-    global chat_area, history, history_index, root, entry, data, profile_pic_frame, main_frame,minichat_area,canwrite
+    global chat_area , history , history_index , root , entry , data, profile_pic_frame, main_frame
     # Load WATI_finetuned model
     WATI_core.loadmodel()
 
@@ -781,6 +754,8 @@ def main():
     # Load profile picture image
     profile_pic_frame = tk.Frame(root, width=100, height=100)  # Mini image size
     load_profile_picture(root, profile_pic_frame)
+
+
     
     # Start server thread in background
     server_thread = threading.Thread(target=start_ai_server)
@@ -788,9 +763,11 @@ def main():
     # Start the server in a separate thread
     server_thread.start()
 
-    root.bind("<F9>", expand_ui)
-    root.bind("<F8>", minimize_ui)
-
+    # Set a timer to minimize the UI
+    minimize_after_timeout(5000)
+    
+    
+    
     # Start the UI loop
     root.mainloop()
 
@@ -799,51 +776,36 @@ def main():
 
 def load_profile_picture(root, profile_pic_frame):
     """Load and display the profile picture in minimized mode."""
-    global canwrite,minichat_area
-    
-    
+    # Load the image 
     image = Image.open("Aiimg.png")  
     image = image.resize((100, 100), Image.Resampling.LANCZOS)  # Resize to mini size
+  
     profile_image = ImageTk.PhotoImage(image)
-    
+
     # Create a label to hold the image
     profile_pic_label = tk.Label(profile_pic_frame, image=profile_image)
-    profile_pic_label.image = profile_image  
+    profile_pic_label.image = profile_image 
     profile_pic_label.pack()
-    minichat_area = scrolledtext.ScrolledText(profile_pic_frame, wrap=tk.WORD, bg='#40414f', fg='#d1d5db', font=('Helvetica', 12), padx=10, pady=10, insertbackground='white', highlightthickness=0, borderwidth=0)
-    minichat_area.pack(padx=10, pady=10, fill=tk.BOTH, expand=True)
-    
-    
-    
-        
-        
 
+def minimize_after_timeout(timeout):
+    """Set a timer to minimize the window after the timeout."""
+    root.after(timeout, minimize_ui)
 
-
-def minimize_ui(event=None):
+def minimize_ui():
     """Minimize the UI to a profile picture."""
-    global canwrite
     main_frame.pack_forget()  # Hide the full UI
     profile_pic_frame.pack(fill=tk.BOTH, expand=True)  # Show the profile picture
-    root.geometry("200x200")  # Resize the window to match the image
-    profile_pic_frame.configure(bg='#343541')
-    canwrite=True
-    while canwrite:
-     getans=handle_user_input("imagine your are in idle or background mode in appilcation and write your idle thoughts but keep it short --use-groq")
-     simulate_typing(getans)
-     sleep(10)
-     minichat_area.delete('1.0', tk.END)
+    root.geometry("100x100")  # Resize the window to match the image
 
-   
-   
+    # Bind click event to expand the UI when the profile picture is clicked
+    profile_pic_frame.bind("<Button-1>", expand_ui)
 
 def expand_ui(event=None):
     """Expand the UI back to the full view."""
-    global canwrite
     profile_pic_frame.pack_forget()  # Hide the profile picture
     main_frame.pack(fill=tk.BOTH, expand=True)  # Show the full UI
-    root.geometry("700x600")  # Restore the full window size
-    canwrite = False
+    root.geometry("400x300")  # Restore the full window size
+    minimize_after_timeout(5000)  # Reset the timer for the next minimization
 
 if __name__ == "__main__":
     main()
